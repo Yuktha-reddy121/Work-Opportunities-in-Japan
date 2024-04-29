@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Workociti">
+  <meta name="author" content="Workociti">
+  <meta name="keywords" content="Workociti">
+
+  <!-- Title Page-->
+  <title>応用</title>
+
+  <!-- Font special for pages-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Main CSS-->
+  <link href="signup/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+  <div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+      <div class="card card-6">
+        <div class="card-heading">
+          <h2 class="title">仕事に応募する</h2>
+        </div>
+        <div class="card-body">
+          <form method="POST">
+
+
+
+            
+            <!--email-->
+            <div class="form-row">
+              <div class="name">電子メールアドレス</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
+                </div>
+              </div>
+            </div>
+
+          
+
+            <!--name-->
+            <div class="form-row">
+              <div class="name">フルネーム</div>
+              <div class="value">
+                <input class="input--style-6" type="text" name="full_name">
+              </div>
+            </div>
+
+            <!--DOB-->
+            <div class="form-row">
+              <div class="name">生年月日</div>
+              <div class="value">
+                <input class="input--style-6" type="date" name="dob">
+              </div>
+            </div>
+
+            <!--gender-->
+            <div class="form-row">
+              <div class="name col-lg-2">性別</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-10">
+                  <option value="1">男性</オプション>
+                    <option value="1">女性</option>
+                </select>
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="name">資格</div>
+              <!--Qualification-->
+
+              <div>
+                <div class=" form-row">
+                  <div class="name">12th</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="course" placeholder="コース">
+                    <input class="input--style-6" type="number" name="marks" placeholder="マークs">
+                  </div>
+                </div>
+                <div>
+                  <div class=" form-row">
+                    <div class="name">卒業生</div>
+                    <div class="value">
+                      <input class="input--style-6" type="text" name="course" placeholder="コース">
+                      <input class="input--style-6" type="text" name="Specialization" placeholder="専門化">
+                      <input class="input--style-6" type="number" name="marks" placeholder="マーク">
+                    </div>
+                  </div>
+                </div>
+                <div class=" form-row">
+                  <div class="name">マスターズ</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="Specialization" placeholder="専門化">
+                    <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
+                  </div>
+                </div>
+
+                <div class=" form-row">
+                  <div class="name">博士号</div>
+                  <div class="value">
+                    <input class="input--style-6" type="text" name="paper" placeholder="論文_プレゼンテーション">
+                    <!--  <input class="input-style-6" type="number" name="marks" placeholder="marks">-->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of Qualification-->
+
+            <!--Salary-->
+            <div class="form-row">
+              <div class="name">現在の給与</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" name="Salary" type="number" placeholder="給与を入力してくださいy"></input>
+                </div>
+              </div>
+            </div>
+
+            <!--Notice period-->
+            <div class="form-row">
+              <div class="name">通知期間(日)</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" name="notice" type="number" placeholder="通知期間を入力してください"></input>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="name">経験</div>
+              <!--experience-->
+
+              <div>
+                <div class=" form-row">
+                  <div class="name">作業期間</div>
+                  <div class="value">
+
+                    <input class="input--style-6" type="date" name="from">
+
+                    <input class="input--style-6" type="date" name="to">
+                    <textarea class="textarea--style-6" name="job_description" placeholder="職務内容を入力してください"></textarea>
+
+
+
+
+
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <!--Skill Sets-->
+            <div class="form-row">
+              <div class="name">スキルセット</div>
+              <div class="value">
+                <input class="input--style-6" type="text" name="skill" placeholder="あなたのスキルを入力してください">
+              </div>
+            </div>
+
+
+            <!--Current Address-->
+            <div class="form-row">
+              <div class="name">現住所</div>
+              <div class="value">
+                <div class="input-group">
+                  <textarea class="textarea--style-6" name="address" placeholder="住所を入力してください"></textarea>
+                </div>
+              </div>
+            </div>
+
+
+            <!--location-->
+            <div class="form-row">
+              <div class="name col-lg-2">位置</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-6">
+                  <option value="1">トキプ</オプション>
+                    <option value="1">川崎</option>
+                    <option value="1">京都</option>
+                    <option value="1">横浜</option>
+
+                </select>
+              </div>
+              <pre>     </pre>
+
+              <div class="col-lg-4">
+                <input class="input--style-6" type="text" name="city">
+
+              </div>
+            </div>
+
+
+
+            <div class="form-row">
+              <div class="name">メッセージ</div>
+              <div class="value">
+                <div class="input-group">
+                  <textarea class="textarea--style-6" name="message" placeholder="雇用主に送信されたメッセージ"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="name">履歴書のアップロード</div>
+              <div class="value">
+                <div class="input-group js-input-file">
+                  <input class="input-file" type="file" name="file_cv" id="file">
+                  <label class="label--file" for="file">ファイルを選ぶ</label>
+                  <span class="input-file__info">ファイルが選択されていません</span>
+                </div>
+                <div class="label--desc">CV/履歴書またはその他の関連ファイルをアップロードします。最大ファイルサイズ 50MB</div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn--radius-2 btn--blue-2" type="submit" onclick="redirectToPostApplyPage()">アプリケーションの送信</button>
+          
+          <a href="user_signup.html">English</a>
+        </div>
+        <script>
+          function redirectToPostApplyPage() {
+            window.location.href = 'post-application.html';
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="signup/vendor/jquery/jquery.min.js"></script>
+
+  
+
+  <!-- Main JS-->
+  <script src="signup/js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

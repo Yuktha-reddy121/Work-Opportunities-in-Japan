@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Workociti">
+  <meta name="author" content="Workociti">
+  <meta name="keywords" content="Workociti">
+
+  <!-- Title Page-->
+  <title>サインアップ</title>
+
+  <!-- Font special for pages-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Main CSS-->
+  <link href="signup/css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+  <div class="page-wrapper bg-dark p-t-100 p-b-50">
+    <div class="wrapper wrapper--w900">
+      <div class="card card-6">
+        <div class="card-heading">
+          <h2 class="title">仕事に応募する</h2>
+        </div>
+        <div class="card-body">
+          <form method="POST">
+
+
+
+
+            <!--email-->
+            <div class="form-row">
+              <div class="name">電子メールアドレス</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
+                </div>
+              </div>
+            </div>
+
+            <!--Password-->
+            <div class="form-row">
+              <div class="name">パスワード</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="pass" id="password" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--Confirm Password-->
+            <div class="form-row">
+              <div class="name">Rパスワードを再入力してください</div>
+              <div class="value">
+                <div class="input-group">
+                  <input class="input--style-6" type="password" name="repass" id="confirm_password" onkeyup="validatePassword();" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <!--name-->
+            <div class="form-row">
+              <div class="name">フルネーム</div>
+              <div class="value">
+                <input class="input--style-6" type="text" name="full_name">
+              </div>
+            </div>
+
+            <!--DOB-->
+            <div class="form-row">
+              <div class="name">生年月日</div>
+              <div class="value">
+                <input class="input--style-6" type="date" name="dob">
+              </div>
+            </div>
+
+            <!--gender-->
+            <div class="form-row">
+              <div class="name col-lg-2">性別</div>
+              <div class="default-select" id="default-select">
+
+                <select class="col-lg-10">
+                  <option value="1">男</option>
+                  <option value="1">女性</option>
+                </select>
+              </div>
+            </div>
+
+
+            
+        <div class="card-footer">
+          <button class="btn btn--radius-2 btn--blue-2" type="submit" onclick="redirectToPostSignUpPage()">サインアップ</button>
+          
+          <a href="user_signup.html">ENGLISH</a>
+        </div>
+        <script>
+          function redirectToPostSignUpPage() {
+            window.location.href = 'post-signupjp.html';
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquery JS-->
+  <script src="signup/vendor/jquery/jquery.min.js"></script>
+
+  <!--confirm password-->
+  <script>
+    var password = document.getElementById("password"),
+      confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword() {
+      if (password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Passwords Don't Match");
+      } else {
+        confirm_password.setCustomValidity('');
+      }
+    }
+  </script>
+
+  <!-- Main JS-->
+  <script src="signup/js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->
